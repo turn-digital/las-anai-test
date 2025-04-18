@@ -32,6 +32,11 @@ export default defineConfig({
           label: "Facebook",
           href: "https://www.facebook.com/pieklustamiba.lv",
         },
+        {
+          icon: "linkedin",
+          label: "LinkedIn",
+          href: "https://www.linkedin.com/company/90792481/",
+        },
       ],
       head: [
         // Example: add Fathom analytics script tag.
