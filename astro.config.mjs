@@ -8,7 +8,7 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 
 export default defineConfig({
-  site: "https://http://www.lasiviegli.lv",
+  site: "https://www.lasiviegli.lv",
   integrations: [
     starlight({
       defaultLocale: "root",
