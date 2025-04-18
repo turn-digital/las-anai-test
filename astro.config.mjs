@@ -1,7 +1,9 @@
 // @ts-check
-import { defineConfig, fontProviders } from "astro/config";
+import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import sidebar from "./sidebar.config.js";
+
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 
@@ -9,6 +11,13 @@ export default defineConfig({
   site: "https://http://www.lasiviegli.lv",
   integrations: [
     starlight({
+      defaultLocale: "root",
+      locales: {
+        root: {
+          label: "Latvian",
+          lang: "lv",
+        },
+      },
       title: "Lasi viegli",
       sidebar,
       customCss: [
@@ -36,5 +45,6 @@ export default defineConfig({
         },
       ],
     }),
+    sitemap(),
   ],
 });
