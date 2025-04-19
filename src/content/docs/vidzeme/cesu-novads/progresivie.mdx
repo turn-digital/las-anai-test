@@ -1,6 +1,8 @@
 ---
 title: '"PROGRESĪVIE"'
+description: 'Mākslīgā intelekta pārveidota,  "PROGRESĪVIE" - Cēsu novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/cesu-novads/progresivie'
+municipality: 'Cēsu novads'
 start_number: 6
 count_of_candidate: 8
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 8
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Iekļaujoša izglītība" variant="note" size="small" /> <Badge text="Civilā aizsardzība" variant="note" size="small" /> <Badge text="Mikromobilitāte un satiksmes drošība" variant="note" size="small" /> <Badge text="Iedzīvotāju iesaiste" variant="note" size="small" /> <Badge text="Sociālais atbalsts" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

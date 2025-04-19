@@ -1,6 +1,8 @@
 ---
 title: 'VIDZEMES PARTIJA'
+description: 'Mākslīgā intelekta pārveidota,  VIDZEMES PARTIJA - Ogres novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/ogres-novads/vidzemes-partija'
+municipality: 'Ogres novads'
 start_number: 3
 count_of_candidate: 25
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 25
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Ģimene un veselība" variant="note" size="small" /> <Badge text="Drošība novadā" variant="note" size="small" /> <Badge text="Izglītības attīstība" variant="note" size="small" /> <Badge text="Ceļu un mobilitātes uzlabojumi" variant="note" size="small" /> <Badge text="Uzņēmējdarbības atbalsts" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

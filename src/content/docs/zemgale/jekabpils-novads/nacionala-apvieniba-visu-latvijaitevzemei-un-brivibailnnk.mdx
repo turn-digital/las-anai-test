@@ -1,6 +1,8 @@
 ---
 title: 'Nacionālā apvienība "Visu Latvijai!"-"Tēvzemei un Brīvībai/LNNK"'
+description: 'Mākslīgā intelekta pārveidota,  Nacionālā apvienība "Visu Latvijai!"-"Tēvzemei un Brīvībai/LNNK" - Jēkabpils novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/jekabpils-novads/nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk'
+municipality: 'Jēkabpils novads'
 start_number: 10
 count_of_candidate: 22
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 22
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Ģimenes atbalsts" variant="note" size="small" /> <Badge text="Kultūras mantojuma saglabāšana" variant="note" size="small" /> <Badge text="Ceļu un infrastruktūras uzlabošana" variant="note" size="small" /> <Badge text="Uzņēmējdarbības atbalsts" variant="note" size="small" /> <Badge text="Drošības un civilās aizsardzības stiprināšana" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

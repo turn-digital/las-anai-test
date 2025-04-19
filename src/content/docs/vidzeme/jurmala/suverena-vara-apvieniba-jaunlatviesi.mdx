@@ -1,6 +1,8 @@
 ---
 title: '"SUVERĒNĀ VARA", APVIENĪBA JAUNLATVIEŠI'
+description: 'Mākslīgā intelekta pārveidota,  "SUVERĒNĀ VARA", APVIENĪBA JAUNLATVIEŠI - Jūrmala programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/jurmala/suverena-vara-apvieniba-jaunlatviesi'
+municipality: 'Jūrmala'
 start_number: 8
 count_of_candidate: 17
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 17
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Pašvaldības caurspīdīgums" variant="note" size="small" /> <Badge text="Veselības tūrisma attīstība" variant="note" size="small" /> <Badge text="Atbalsts ģimenēm un pensionāriem" variant="note" size="small" /> <Badge text="Pedagogu atbalsts" variant="note" size="small" /> <Badge text="Vides sakārtošana" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

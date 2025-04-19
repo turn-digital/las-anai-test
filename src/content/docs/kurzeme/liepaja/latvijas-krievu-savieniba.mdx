@@ -1,6 +1,8 @@
 ---
 title: '"Latvijas Krievu savienība"'
+description: 'Mākslīgā intelekta pārveidota,  "Latvijas Krievu savienība" - Liepāja programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/liepaja/latvijas-krievu-savieniba'
+municipality: 'Liepāja'
 start_number: 9
 count_of_candidate: 11
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 11
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Krievu kultūras saglabāšana" variant="note" size="small" /> <Badge text="Sociālā atbalsta palielināšana" variant="note" size="small" /> <Badge text="Vēstures saglabāšana" variant="note" size="small" /> <Badge text="Komunālo jautājumu risināšana" variant="note" size="small" /> <Badge text="Pašvaldības caurskatāmība" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

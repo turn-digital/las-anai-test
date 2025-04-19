@@ -1,6 +1,8 @@
 ---
 title: '"Latvijai un Ventspilij"'
+description: 'Mākslīgā intelekta pārveidota,  "Latvijai un Ventspilij" - Ventspils programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/ventspils/latvijai-un-ventspilij'
+municipality: 'Ventspils'
 start_number: 3
 count_of_candidate: 16
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 16
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Ostas attīstība" variant="note" size="small" /> <Badge text="Jauniešu atbalsts" variant="note" size="small" /> <Badge text="Senioru labklājība" variant="note" size="small" /> <Badge text="Pilsētas labiekārtošana" variant="note" size="small" /> <Badge text="Veselības aprūpe" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

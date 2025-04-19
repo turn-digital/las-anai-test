@@ -1,6 +1,8 @@
 ---
 title: '"Saskaņa" sociāldemokrātiskā partija'
+description: 'Mākslīgā intelekta pārveidota,  "Saskaņa" sociāldemokrātiskā partija - Balvu novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/balvu-novads/saskana-socialdemokratiska-partija'
+municipality: 'Balvu novads'
 start_number: 6
 count_of_candidate: 9
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 9
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Sadarbība un saskaņa" variant="note" size="small" /> <Badge text="NVO un kultūras atbalsts" variant="note" size="small" /> <Badge text="Jaunie speciālisti un stipendijas" variant="note" size="small" /> <Badge text="Senioru dzīves kvalitāte" variant="note" size="small" /> <Badge text="Uzņēmējdarbības atbalsts" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

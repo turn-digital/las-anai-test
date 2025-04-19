@@ -1,6 +1,8 @@
 ---
 title: '"SUVERĒNĀ VARA", APVIENĪBA JAUNLATVIEŠI'
+description: 'Mākslīgā intelekta pārveidota,  "SUVERĒNĀ VARA", APVIENĪBA JAUNLATVIEŠI - Dobeles novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/dobeles-novads/suverena-vara-apvieniba-jaunlatviesi'
+municipality: 'Dobeles novads'
 start_number: 6
 count_of_candidate: 9
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 9
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Ģimenes vērtības" variant="note" size="small" /> <Badge text="Pašvaldību caurspīdīgums" variant="note" size="small" /> <Badge text="Iedzīvotāju līdzdalība" variant="note" size="small" /> <Badge text="Vēstures pieminekļu saglabāšana" variant="note" size="small" /> <Badge text="Atbalsts sociāli mazaizsargātajiem" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

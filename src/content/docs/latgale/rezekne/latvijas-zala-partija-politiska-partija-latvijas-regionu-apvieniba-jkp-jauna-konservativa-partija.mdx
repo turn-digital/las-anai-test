@@ -1,6 +1,8 @@
 ---
 title: 'Latvijas Zaļā partija, Politiskā partija "Latvijas Reģionu Apvienība", JKP Jaunā konservatīvā partija'
+description: 'Mākslīgā intelekta pārveidota,  Latvijas Zaļā partija, Politiskā partija "Latvijas Reģionu Apvienība", JKP Jaunā konservatīvā partija - Rēzekne programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/rezekne/latvijas-zala-partija-politiska-partija-latvijas-regionu-apvieniba-jkp-jauna-konservativa-partija'
+municipality: 'Rēzekne'
 start_number: 6
 count_of_candidate: 16
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 16
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Godīga pārvaldība" variant="note" size="small" /> <Badge text="Dzīves vides uzlabošana" variant="note" size="small" /> <Badge text="Uzņēmējdarbības atbalsts" variant="note" size="small" /> <Badge text="Kultūras un mantojuma saglabāšana" variant="note" size="small" /> <Badge text="Sociālā labklājība" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

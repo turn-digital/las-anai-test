@@ -1,6 +1,8 @@
 ---
 title: '"Centra Partija"'
+description: 'Mākslīgā intelekta pārveidota,  "Centra Partija" - Jelgava programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/jelgava/centra-partija'
+municipality: 'Jelgava'
 start_number: 2
 count_of_candidate: 4
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 4
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Budžeta atveseļošana" variant="note" size="small" /> <Badge text="Pašvaldības uzņēmumi" variant="note" size="small" /> <Badge text="Sociālais atbalsts" variant="note" size="small" /> <Badge text="Infrastruktūras attīstība" variant="note" size="small" /> <Badge text="Sabiedrības saliedēšana" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

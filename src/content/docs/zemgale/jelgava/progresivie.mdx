@@ -1,6 +1,8 @@
 ---
 title: '"PROGRESĪVIE"'
+description: 'Mākslīgā intelekta pārveidota,  "PROGRESĪVIE" - Jelgava programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/jelgava/progresivie'
+municipality: 'Jelgava'
 start_number: 10
 count_of_candidate: 9
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 9
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Sabiedriskais transports" variant="note" size="small" /> <Badge text="Energoefektīvi mājokļi" variant="note" size="small" /> <Badge text="Godīga pārvaldība" variant="note" size="small" /> <Badge text="Civilā aizsardzība" variant="note" size="small" /> <Badge text="Atbalsts uzņēmējdarbībai" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

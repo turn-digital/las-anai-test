@@ -1,6 +1,8 @@
 ---
 title: 'Kustība "Par!", Jaunā VIENOTĪBA'
+description: 'Mākslīgā intelekta pārveidota,  Kustība "Par!", Jaunā VIENOTĪBA - Ventspils programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/ventspils/kustiba-par-jauna-vienotiba'
+municipality: 'Ventspils'
 start_number: 5
 count_of_candidate: 16
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 16
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Iedzīvotāju līdzdalība" variant="note" size="small" /> <Badge text="Ekonomikas transformācija" variant="note" size="small" /> <Badge text="Atbalsts jaunām ģimenēm" variant="note" size="small" /> <Badge text="Tūrisma attīstība" variant="note" size="small" /> <Badge text="Komunālo pakalpojumu uzlabošana" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

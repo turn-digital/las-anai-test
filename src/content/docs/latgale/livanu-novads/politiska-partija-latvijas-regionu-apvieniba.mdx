@@ -1,6 +1,8 @@
 ---
 title: 'Politiskā partija "Latvijas Reģionu Apvienība"'
+description: 'Mākslīgā intelekta pārveidota,  Politiskā partija "Latvijas Reģionu Apvienība" - Līvānu novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/livanu-novads/politiska-partija-latvijas-regionu-apvieniba'
+municipality: 'Līvānu novads'
 start_number: 8
 count_of_candidate: 10
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 10
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Mājokļu pieejamība" variant="note" size="small" /> <Badge text="Veselības aprūpes uzlabošana" variant="note" size="small" /> <Badge text="Jaunu ģimeņu piesaiste" variant="note" size="small" /> <Badge text="Izglītības kvalitāte" variant="note" size="small" /> <Badge text="Senioru atbalsts" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

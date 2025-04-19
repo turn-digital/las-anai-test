@@ -1,6 +1,8 @@
 ---
 title: 'Politiskā partija "KOPĀ LATVIJAI"'
+description: 'Mākslīgā intelekta pārveidota,  Politiskā partija "KOPĀ LATVIJAI" - Jēkabpils novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/jekabpils-novads/politiska-partija-kopa-latvijai'
+municipality: 'Jēkabpils novads'
 start_number: 2
 count_of_candidate: 19
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 19
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Iedzīvotāju labklājība" variant="note" size="small" /> <Badge text="Ceļu infrastruktūra" variant="note" size="small" /> <Badge text="Veselības aprūpes pieejamība" variant="note" size="small" /> <Badge text="Mājokļu attīstība" variant="note" size="small" /> <Badge text="Kultūras mantojuma saglabāšana" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

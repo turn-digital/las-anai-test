@@ -1,6 +1,8 @@
 ---
 title: 'Jaunā VIENOTĪBA'
+description: 'Mākslīgā intelekta pārveidota,  Jaunā VIENOTĪBA - Saulkrastu novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/saulkrastu-novads/jauna-vienotiba'
+municipality: 'Saulkrastu novads'
 start_number: 2
 count_of_candidate: 18
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 18
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Drošība un pieejamība" variant="note" size="small" /> <Badge text="Ilgtspējīga attīstība" variant="note" size="small" /> <Badge text="Izglītība un jaunatne" variant="note" size="small" /> <Badge text="Atbildīga pārvaldība" variant="note" size="small" /> <Badge text="Iedzīvotāju iesaiste" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

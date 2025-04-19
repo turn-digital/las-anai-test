@@ -1,6 +1,8 @@
 ---
 title: 'Nacionālā apvienība "Visu Latvijai!"-"Tēvzemei un Brīvībai/LNNK"'
+description: 'Mākslīgā intelekta pārveidota,  Nacionālā apvienība "Visu Latvijai!"-"Tēvzemei un Brīvībai/LNNK" - Jelgava programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/jelgava/nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk'
+municipality: 'Jelgava'
 start_number: 8
 count_of_candidate: 18
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 18
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Ģimenei draudzīga Jelgava" variant="note" size="small" /> <Badge text="Ērta dzīvošana" variant="note" size="small" /> <Badge text="Veselīgs un aktīvs dzīvesveids" variant="note" size="small" /> <Badge text="Uzņēmējdarbības atbalsts" variant="note" size="small" /> <Badge text="Latviskās tradīcijas" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

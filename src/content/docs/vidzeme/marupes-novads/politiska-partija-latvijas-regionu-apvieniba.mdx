@@ -1,6 +1,8 @@
 ---
 title: 'Politiskā partija "Latvijas Reģionu Apvienība"'
+description: 'Mākslīgā intelekta pārveidota,  Politiskā partija "Latvijas Reģionu Apvienība" - Mārupes novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/marupes-novads/politiska-partija-latvijas-regionu-apvieniba'
+municipality: 'Mārupes novads'
 start_number: 9
 count_of_candidate: 22
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 22
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Ģimene un cilvēks" variant="note" size="small" /> <Badge text="Efektīva pārvaldība" variant="note" size="small" /> <Badge text="Satiksmes drošība" variant="note" size="small" /> <Badge text="Sociālā drošība" variant="note" size="small" /> <Badge text="Ilgtspējīga vide" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

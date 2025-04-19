@@ -1,6 +1,8 @@
 ---
 title: 'Nacionālā apvienība "Visu Latvijai!"-"Tēvzemei un Brīvībai/LNNK", Politiskā partija "Latvijas Reģionu Apvienība", VIDZEMES PARTIJA, JKP Jaunā konservatīvā partija'
+description: 'Mākslīgā intelekta pārveidota,  Nacionālā apvienība "Visu Latvijai!"-"Tēvzemei un Brīvībai/LNNK", Politiskā partija "Latvijas Reģionu Apvienība", VIDZEMES PARTIJA, JKP Jaunā konservatīvā partija - Siguldas novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/siguldas-novads/nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk-politiska-partija-latvijas-regionu-apvieniba-vidzemes-partija-jkp-jauna-konservativa-partija'
+municipality: 'Siguldas novads'
 start_number: 2
 count_of_candidate: 22
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 22
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Droša dzīves vide" variant="note" size="small" /> <Badge text="Iespējas izaugsmei" variant="note" size="small" /> <Badge text="Ģimene kā vērtība" variant="note" size="small" /> <Badge text="Sportiska kopiena" variant="note" size="small" /> <Badge text="Dabas un kultūras saglabāšana" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

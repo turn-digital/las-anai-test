@@ -1,6 +1,8 @@
 ---
 title: 'Nacionālā apvienība "Visu Latvijai!"-"Tēvzemei un Brīvībai/LNNK"'
+description: 'Mākslīgā intelekta pārveidota,  Nacionālā apvienība "Visu Latvijai!"-"Tēvzemei un Brīvībai/LNNK" - Rīga programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/riga/nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk'
+municipality: 'Rīga'
 start_number: 13
 count_of_candidate: 63
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 63
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Latviska vide" variant="note" size="small" /> <Badge text="Ekonomikas izaugsme" variant="note" size="small" /> <Badge text="Gudra izglītība" variant="note" size="small" /> <Badge text="Droša pilsēta" variant="note" size="small" /> <Badge text="Apkaimju attīstība" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

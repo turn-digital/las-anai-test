@@ -1,6 +1,8 @@
 ---
 title: 'Politiskā partija "Stabilitātei!"'
+description: 'Mākslīgā intelekta pārveidota,  Politiskā partija "Stabilitātei!" - Ventspils programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/ventspils/politiska-partija-stabilitatei'
+municipality: 'Ventspils'
 start_number: 8
 count_of_candidate: 10
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 10
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Iedzīvotāju noturēšana" variant="note" size="small" /> <Badge text="Ostas attīstība" variant="note" size="small" /> <Badge text="Uzņēmējdarbības veicināšana" variant="note" size="small" /> <Badge text="Senioru aktīva dzīve" variant="note" size="small" /> <Badge text="Kvalitatīva veselības aprūpe" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

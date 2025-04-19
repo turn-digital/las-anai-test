@@ -1,6 +1,8 @@
 ---
 title: '"SUVERĒNĀ VARA", APVIENĪBA JAUNLATVIEŠI'
+description: 'Mākslīgā intelekta pārveidota,  "SUVERĒNĀ VARA", APVIENĪBA JAUNLATVIEŠI - Rīga programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/riga/suverena-vara-apvieniba-jaunlatviesi'
+municipality: 'Rīga'
 start_number: 12
 count_of_candidate: 63
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 63
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Rīgas budžeta audits" variant="note" size="small" /> <Badge text="Pabalsts ģimenēm ar bērniem" variant="note" size="small" /> <Badge text="Atbalsts uzņēmējiem un zinātnei" variant="note" size="small" /> <Badge text="Droši parki un promenādes" variant="note" size="small" /> <Badge text="Pašvaldības pakalpojumu uzlabošana" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

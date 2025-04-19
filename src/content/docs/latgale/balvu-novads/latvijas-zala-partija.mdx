@@ -1,6 +1,8 @@
 ---
 title: 'Latvijas Zaļā partija'
+description: 'Mākslīgā intelekta pārveidota,  Latvijas Zaļā partija - Balvu novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/balvu-novads/latvijas-zala-partija'
+municipality: 'Balvu novads'
 start_number: 1
 count_of_candidate: 18
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 18
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Finanšu stabilizācija" variant="note" size="small" /> <Badge text="Iedzīvotāju iesaiste" variant="note" size="small" /> <Badge text="Digitalizācija" variant="note" size="small" /> <Badge text="Uzņēmējdarbības atbalsts" variant="note" size="small" /> <Badge text="Izglītības sistēmas stiprināšana" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

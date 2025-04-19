@@ -1,6 +1,8 @@
 ---
 title: '"SUVERĒNĀ VARA", APVIENĪBA JAUNLATVIEŠI'
+description: 'Mākslīgā intelekta pārveidota,  "SUVERĒNĀ VARA", APVIENĪBA JAUNLATVIEŠI - Ventspils programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/ventspils/suverena-vara-apvieniba-jaunlatviesi'
+municipality: 'Ventspils'
 start_number: 7
 count_of_candidate: 5
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 5
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Ģimenes vērtības un atbalsts" variant="note" size="small" /> <Badge text="Pašvaldības tēriņu caurspīdīgums" variant="note" size="small" /> <Badge text="Vietējās ekonomikas stiprināšana" variant="note" size="small" /> <Badge text="Infrastruktūras attīstība un mobilitāte" variant="note" size="small" /> <Badge text="Tūrisma nozares attīstība" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

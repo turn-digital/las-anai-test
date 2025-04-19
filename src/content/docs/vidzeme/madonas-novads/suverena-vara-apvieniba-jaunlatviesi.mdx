@@ -1,6 +1,8 @@
 ---
 title: '"SUVERĒNĀ VARA", APVIENĪBA JAUNLATVIEŠI'
+description: 'Mākslīgā intelekta pārveidota,  "SUVERĒNĀ VARA", APVIENĪBA JAUNLATVIEŠI - Madonas novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/madonas-novads/suverena-vara-apvieniba-jaunlatviesi'
+municipality: 'Madonas novads'
 start_number: 5
 count_of_candidate: 10
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 10
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Ģimenes atbalsts" variant="note" size="small" /> <Badge text="Finanšu caurskatāmība" variant="note" size="small" /> <Badge text="Jauniešu atbalsts" variant="note" size="small" /> <Badge text="Ieslodzīto resocializācija" variant="note" size="small" /> <Badge text="Paliatīvā aprūpe" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

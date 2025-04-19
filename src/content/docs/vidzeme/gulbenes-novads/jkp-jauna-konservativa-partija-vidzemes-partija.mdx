@@ -1,6 +1,8 @@
 ---
 title: 'JKP Jaunā konservatīvā partija, VIDZEMES PARTIJA'
+description: 'Mākslīgā intelekta pārveidota,  JKP Jaunā konservatīvā partija, VIDZEMES PARTIJA - Gulbenes novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/gulbenes-novads/jkp-jauna-konservativa-partija-vidzemes-partija'
+municipality: 'Gulbenes novads'
 start_number: 4
 count_of_candidate: 18
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 18
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Izglītības kvalitāte" variant="note" size="small" /> <Badge text="Uzņēmējdarbības atbalsts" variant="note" size="small" /> <Badge text="Ceļu infrastruktūra" variant="note" size="small" /> <Badge text="Veselības aprūpes pieejamība" variant="note" size="small" /> <Badge text="Sociālā aizsardzība ģimenēm" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

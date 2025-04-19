@@ -1,6 +1,8 @@
 ---
 title: 'VIDZEMES PARTIJA'
+description: 'Mākslīgā intelekta pārveidota,  VIDZEMES PARTIJA - Smiltenes novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/smiltenes-novads/vidzemes-partija'
+municipality: 'Smiltenes novads'
 start_number: 6
 count_of_candidate: 15
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 15
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Izglītības un sporta attīstība" variant="note" size="small" /> <Badge text="Uzņēmējdarbības veicināšana" variant="note" size="small" /> <Badge text="Ceļu un infrastruktūras uzlabošana" variant="note" size="small" /> <Badge text="Sociālā drošība un veselība" variant="note" size="small" /> <Badge text="Energoefektivitāte un vide" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

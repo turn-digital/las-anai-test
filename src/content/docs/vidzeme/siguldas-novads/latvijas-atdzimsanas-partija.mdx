@@ -1,6 +1,8 @@
 ---
 title: 'Latvijas Atdzimšanas partija'
+description: 'Mākslīgā intelekta pārveidota,  Latvijas Atdzimšanas partija - Siguldas novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/siguldas-novads/latvijas-atdzimsanas-partija'
+municipality: 'Siguldas novads'
 start_number: 7
 count_of_candidate: 5
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 5
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Uzņēmējdarbības atdzimšana" variant="note" size="small" /> <Badge text="Veselības aprūpes pieejamība" variant="note" size="small" /> <Badge text="Ģimeņu atbalsta programma" variant="note" size="small" /> <Badge text="Siguldas universitātes attīstība" variant="note" size="small" /> <Badge text="Videi draudzīga enerģija" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

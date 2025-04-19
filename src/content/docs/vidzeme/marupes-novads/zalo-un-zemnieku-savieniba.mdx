@@ -1,6 +1,8 @@
 ---
 title: 'Zaļo un Zemnieku savienība'
+description: 'Mākslīgā intelekta pārveidota,  Zaļo un Zemnieku savienība - Mārupes novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/marupes-novads/zalo-un-zemnieku-savieniba'
+municipality: 'Mārupes novads'
 start_number: 8
 count_of_candidate: 10
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 10
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Izglītības attīstība" variant="note" size="small" /> <Badge text="Infrastruktūras uzlabošana" variant="note" size="small" /> <Badge text="Krīzes gatavība" variant="note" size="small" /> <Badge text="Ilgtspējīga vide" variant="note" size="small" /> <Badge text="Sabiedrības labklājība" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

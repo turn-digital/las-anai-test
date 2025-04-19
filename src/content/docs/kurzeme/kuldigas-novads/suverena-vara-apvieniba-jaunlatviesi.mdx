@@ -1,6 +1,8 @@
 ---
 title: '"SUVERĒNĀ VARA", APVIENĪBA JAUNLATVIEŠI'
+description: 'Mākslīgā intelekta pārveidota,  "SUVERĒNĀ VARA", APVIENĪBA JAUNLATVIEŠI - Kuldīgas novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/kuldigas-novads/suverena-vara-apvieniba-jaunlatviesi'
+municipality: 'Kuldīgas novads'
 start_number: 4
 count_of_candidate: 7
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 7
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Ģimenes atbalsts" variant="note" size="small" /> <Badge text="Pašvaldības caurspīdīgums" variant="note" size="small" /> <Badge text="Infrastruktūras uzlabošana" variant="note" size="small" /> <Badge text="Senioru atbalsts" variant="note" size="small" /> <Badge text="Kultūras mantojuma saglabāšana" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

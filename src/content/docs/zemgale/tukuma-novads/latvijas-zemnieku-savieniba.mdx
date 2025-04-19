@@ -1,6 +1,8 @@
 ---
 title: '"LATVIJAS ZEMNIEKU SAVIENĪBA"'
+description: 'Mākslīgā intelekta pārveidota,  "LATVIJAS ZEMNIEKU SAVIENĪBA" - Tukuma novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/tukuma-novads/latvijas-zemnieku-savieniba'
+municipality: 'Tukuma novads'
 start_number: 1
 count_of_candidate: 15
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 15
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Drošība un civilā aizsardzība" variant="note" size="small" /> <Badge text="Ceļu un infrastruktūras uzlabošana" variant="note" size="small" /> <Badge text="Veselības aprūpes pieejamība" variant="note" size="small" /> <Badge text="Izglītības atbalsts bērniem un jauniešiem" variant="note" size="small" /> <Badge text="Uzņēmējdarbības veicināšana" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

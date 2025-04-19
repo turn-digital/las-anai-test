@@ -1,6 +1,8 @@
 ---
 title: 'Latvijas Sociālistiskā partija'
+description: 'Mākslīgā intelekta pārveidota,  Latvijas Sociālistiskā partija - Rīga programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/riga/latvijas-socialistiska-partija'
+municipality: 'Rīga'
 start_number: 4
 count_of_candidate: 23
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 23
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Izdevumu samazināšana" variant="note" size="small" /> <Badge text="Sociālā aizsardzība" variant="note" size="small" /> <Badge text="Darbavietu piesaiste" variant="note" size="small" /> <Badge text="Tarifu kontrole" variant="note" size="small" /> <Badge text="Sabiedrības līdzdalība" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

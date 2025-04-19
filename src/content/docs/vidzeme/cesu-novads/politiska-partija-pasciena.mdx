@@ -1,6 +1,8 @@
 ---
 title: 'Politiskā partija "Pašcieņa"'
+description: 'Mākslīgā intelekta pārveidota,  Politiskā partija "Pašcieņa" - Cēsu novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/cesu-novads/politiska-partija-pasciena'
+municipality: 'Cēsu novads'
 start_number: 3
 count_of_candidate: 9
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 9
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Atbalsts ģimenēm ar bērniem" variant="note" size="small" /> <Badge text="Tūrisma attīstība" variant="note" size="small" /> <Badge text="Uzņēmējdarbības atbalsts" variant="note" size="small" /> <Badge text="Infrastruktūras uzlabošana" variant="note" size="small" /> <Badge text="Veselības aprūpes pieejamība" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

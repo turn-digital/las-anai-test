@@ -1,6 +1,8 @@
 ---
 title: 'Politiskā partija "KOPĀ LATVIJAI"'
+description: 'Mākslīgā intelekta pārveidota,  Politiskā partija "KOPĀ LATVIJAI" - Daugavpils programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/daugavpils/politiska-partija-kopa-latvijai'
+municipality: 'Daugavpils'
 start_number: 4
 count_of_candidate: 12
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 12
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Uzticība un saliedētība" variant="note" size="small" /> <Badge text="Ekonomiskā attīstība" variant="note" size="small" /> <Badge text="Sociālā drošība" variant="note" size="small" /> <Badge text="Kultūra un sports" variant="note" size="small" /> <Badge text="Infrastruktūras uzlabošana" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

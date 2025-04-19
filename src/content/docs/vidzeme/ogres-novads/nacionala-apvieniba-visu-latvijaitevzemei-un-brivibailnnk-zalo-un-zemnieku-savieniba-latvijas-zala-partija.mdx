@@ -1,6 +1,8 @@
 ---
 title: 'Nacionālā apvienība "Visu Latvijai!"-"Tēvzemei un Brīvībai/LNNK", Zaļo un Zemnieku savienība, Latvijas Zaļā partija'
+description: 'Mākslīgā intelekta pārveidota,  Nacionālā apvienība "Visu Latvijai!"-"Tēvzemei un Brīvībai/LNNK", Zaļo un Zemnieku savienība, Latvijas Zaļā partija - Ogres novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/ogres-novads/nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk-zalo-un-zemnieku-savieniba-latvijas-zala-partija'
+municipality: 'Ogres novads'
 start_number: 1
 count_of_candidate: 25
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 25
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Sociālā aprūpe" variant="note" size="small" /> <Badge text="Ekonomiskā attīstība" variant="note" size="small" /> <Badge text="Izglītības kvalitāte" variant="note" size="small" /> <Badge text="Infrastruktūras uzlabošana" variant="note" size="small" /> <Badge text="Kultūras un sporta atbalsts" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

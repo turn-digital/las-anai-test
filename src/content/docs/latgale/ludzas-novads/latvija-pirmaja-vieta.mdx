@@ -1,6 +1,8 @@
 ---
 title: 'LATVIJA PIRMAJĀ VIETĀ'
+description: 'Mākslīgā intelekta pārveidota,  LATVIJA PIRMAJĀ VIETĀ - Ludzas novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/ludzas-novads/latvija-pirmaja-vieta'
+municipality: 'Ludzas novads'
 start_number: 1
 count_of_candidate: 18
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 18
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Ekonomiskā attīstība" variant="note" size="small" /> <Badge text="Izglītība un jaunatne" variant="note" size="small" /> <Badge text="Infrastruktūras uzlabojumi" variant="note" size="small" /> <Badge text="Veselība un sociālā aizsardzība" variant="note" size="small" /> <Badge text="Pašvaldības atklātība" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

@@ -1,6 +1,8 @@
 ---
 title: 'Nacionālā apvienība "Visu Latvijai!"-"Tēvzemei un Brīvībai/LNNK"'
+description: 'Mākslīgā intelekta pārveidota,  Nacionālā apvienība "Visu Latvijai!"-"Tēvzemei un Brīvībai/LNNK" - Ķekavas novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/kekavas-novads/nacionala-apvieniba-visu-latvijai-tevzemei-un-brivibailnnk'
+municipality: 'Ķekavas novads'
 start_number: 10
 count_of_candidate: 21
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 21
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Iedzīvotāju intereses" variant="note" size="small" /> <Badge text="Vietējo uzņēmēju atbalsts" variant="note" size="small" /> <Badge text="Izglītības kvalitāte" variant="note" size="small" /> <Badge text="Kultūras mantojums" variant="note" size="small" /> <Badge text="Drošības uzlabošana" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

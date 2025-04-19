@@ -1,6 +1,8 @@
 ---
 title: 'Jaunā VIENOTĪBA'
+description: 'Mākslīgā intelekta pārveidota,  Jaunā VIENOTĪBA - Jelgavas novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/jelgavas-novads/jauna-vienotiba'
+municipality: 'Jelgavas novads'
 start_number: 8
 count_of_candidate: 21
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 21
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Efektīva pārvalde" variant="note" size="small" /> <Badge text="Ceļu infrastruktūra" variant="note" size="small" /> <Badge text="Ilgtspējīga attīstība" variant="note" size="small" /> <Badge text="Izglītības kvalitāte" variant="note" size="small" /> <Badge text="Atbalsts ģimenēm un senioriem" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

@@ -1,6 +1,8 @@
 ---
 title: 'Zaļo un Zemnieku savienība'
+description: 'Mākslīgā intelekta pārveidota,  Zaļo un Zemnieku savienība - Rēzeknes novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/rezeknes-novads/zalo-un-zemnieku-savieniba'
+municipality: 'Rēzeknes novads'
 start_number: 10
 count_of_candidate: 17
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 17
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Uzņēmējdarbības atbalsts" variant="note" size="small" /> <Badge text="Ceļu un infrastruktūras uzlabošana" variant="note" size="small" /> <Badge text="Pašvaldības pakalpojumu pieejamība" variant="note" size="small" /> <Badge text="Izglītības un jaunatnes atbalsts" variant="note" size="small" /> <Badge text="Sociālā atbalsta palielināšana" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

@@ -1,6 +1,8 @@
 ---
 title: 'Politiskā partija "Latvijas Reģionu Apvienība"'
+description: 'Mākslīgā intelekta pārveidota,  Politiskā partija "Latvijas Reģionu Apvienība" - Salaspils novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/salaspils-novads/politiska-partija-latvijas-regionu-apvieniba'
+municipality: 'Salaspils novads'
 start_number: 7
 count_of_candidate: 16
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 16
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Komunikācija ar iedzīvotājiem" variant="note" size="small" /> <Badge text="Izglītības infrastruktūras uzlabošana" variant="note" size="small" /> <Badge text="Infrastruktūras sakārtošana ciematos" variant="note" size="small" /> <Badge text="Medicīnas pieejamības uzlabošana" variant="note" size="small" /> <Badge text="Atbalsts iedzīvotāju grupām" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

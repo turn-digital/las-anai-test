@@ -1,6 +1,8 @@
 ---
 title: '"Latvijas Krievu savienība"'
+description: 'Mākslīgā intelekta pārveidota,  "Latvijas Krievu savienība" - Rēzekne programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/rezekne/latvijas-krievu-savieniba'
+municipality: 'Rēzekne'
 start_number: 10
 count_of_candidate: 4
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 4
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Gaisa tilta rekonstrukcija" variant="note" size="small" /> <Badge text="Kultūras nama atjaunošana" variant="note" size="small" /> <Badge text="Bērnu rotaļu laukumu labiekārtošana" variant="note" size="small" /> <Badge text="Sociālais atbalsts ģimenēm un pensionāriem" variant="note" size="small" /> <Badge text="Vēstures saglabāšana un valodu daudzveidība" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

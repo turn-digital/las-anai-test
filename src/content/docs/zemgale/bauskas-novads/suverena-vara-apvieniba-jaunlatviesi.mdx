@@ -1,6 +1,8 @@
 ---
 title: '"SUVERĒNĀ VARA", APVIENĪBA JAUNLATVIEŠI'
+description: 'Mākslīgā intelekta pārveidota,  "SUVERĒNĀ VARA", APVIENĪBA JAUNLATVIEŠI - Bauskas novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/bauskas-novads/suverena-vara-apvieniba-jaunlatviesi'
+municipality: 'Bauskas novads'
 start_number: 6
 count_of_candidate: 6
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 6
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Ģimenes vērtības" variant="note" size="small" /> <Badge text="Pašvaldības caurspīdīgums" variant="note" size="small" /> <Badge text="Iedzīvotāju līdzdalība" variant="note" size="small" /> <Badge text="Atbalsts mazāk aizsargātajiem" variant="note" size="small" /> <Badge text="Ceļu infrastruktūra" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

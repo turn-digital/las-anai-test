@@ -1,6 +1,8 @@
 ---
 title: '"Saskaņa" sociāldemokrātiskā partija'
+description: 'Mākslīgā intelekta pārveidota,  "Saskaņa" sociāldemokrātiskā partija - Preiļu novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/preilu-novads/saskana-socialdemokratiska-partija'
+municipality: 'Preiļu novads'
 start_number: 7
 count_of_candidate: 10
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 10
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Pašvaldības pakalpojumu pieejamība" variant="note" size="small" /> <Badge text="Infrastruktūras uzlabošana" variant="note" size="small" /> <Badge text="Drošības un kārtības nodrošināšana" variant="note" size="small" /> <Badge text="Sociālā atbalsta palielināšana" variant="note" size="small" /> <Badge text="Izglītības un kultūras atbalsts" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

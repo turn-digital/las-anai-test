@@ -1,6 +1,8 @@
 ---
 title: 'Politiskā partija "Latvijas Reģionu Apvienība"'
+description: 'Mākslīgā intelekta pārveidota,  Politiskā partija "Latvijas Reģionu Apvienība" - Ogres novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/ogres-novads/politiska-partija-latvijas-regionu-apvieniba'
+municipality: 'Ogres novads'
 start_number: 5
 count_of_candidate: 19
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 19
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Līdzsvarota attīstība" variant="note" size="small" /> <Badge text="Godīga pārvaldība" variant="note" size="small" /> <Badge text="Uzņēmējdarbības atbalsts" variant="note" size="small" /> <Badge text="Drošība un veselība" variant="note" size="small" /> <Badge text="Kvalitatīva izglītība" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

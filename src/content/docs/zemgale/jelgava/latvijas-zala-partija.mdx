@@ -1,6 +1,8 @@
 ---
 title: 'Latvijas Zaļā partija'
+description: 'Mākslīgā intelekta pārveidota,  Latvijas Zaļā partija - Jelgava programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/jelgava/latvijas-zala-partija'
+municipality: 'Jelgava'
 start_number: 7
 count_of_candidate: 15
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 15
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Ekonomikas attīstība" variant="note" size="small" /> <Badge text="Vides sakārtošana" variant="note" size="small" /> <Badge text="Sabiedrības labklājība" variant="note" size="small" /> <Badge text="Ilgtspējīga attīstība" variant="note" size="small" /> <Badge text="Iedzīvotāju līdzdalība" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

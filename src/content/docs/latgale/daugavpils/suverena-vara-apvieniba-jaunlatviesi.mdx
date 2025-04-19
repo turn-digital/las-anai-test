@@ -1,6 +1,8 @@
 ---
 title: '"SUVERĒNĀ VARA", APVIENĪBA JAUNLATVIEŠI'
+description: 'Mākslīgā intelekta pārveidota,  "SUVERĒNĀ VARA", APVIENĪBA JAUNLATVIEŠI - Daugavpils programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/daugavpils/suverena-vara-apvieniba-jaunlatviesi'
+municipality: 'Daugavpils'
 start_number: 3
 count_of_candidate: 17
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 17
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Ģimenes atbalsts" variant="note" size="small" /> <Badge text="Pašvaldības caurspīdīgums" variant="note" size="small" /> <Badge text="Bezmaksas sabiedriskais transports" variant="note" size="small" /> <Badge text="Atbalsts uzņēmējdarbībai" variant="note" size="small" /> <Badge text="Vēstures mantojuma saglabāšana" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

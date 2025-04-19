@@ -1,6 +1,8 @@
 ---
 title: '"Centra Partija"'
+description: 'Mākslīgā intelekta pārveidota,  "Centra Partija" - Rīga programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/riga/centra-partija'
+municipality: 'Rīga'
 start_number: 7
 count_of_candidate: 25
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 25
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Bērnu pabalsti" variant="note" size="small" /> <Badge text="Bezmaksas bērnudārzi un skolas" variant="note" size="small" /> <Badge text="Pašvaldības audita veikšana" variant="note" size="small" /> <Badge text="Bezmaksas sabiedriskais transports" variant="note" size="small" /> <Badge text="Droša un zaļa Rīga" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

@@ -1,6 +1,8 @@
 ---
 title: 'Zaļo un Zemnieku savienība'
+description: 'Mākslīgā intelekta pārveidota,  Zaļo un Zemnieku savienība - Gulbenes novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/gulbenes-novads/zalo-un-zemnieku-savieniba'
+municipality: 'Gulbenes novads'
 start_number: 5
 count_of_candidate: 18
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 18
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Drošība un civilā aizsardzība" variant="note" size="small" /> <Badge text="Veselības pakalpojumu pieejamība" variant="note" size="small" /> <Badge text="Infrastruktūras attīstība" variant="note" size="small" /> <Badge text="Ģimeņu atbalsts" variant="note" size="small" /> <Badge text="Uzņēmējdarbības veicināšana" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

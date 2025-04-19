@@ -1,6 +1,8 @@
 ---
 title: '"PROGRESĪVIE"'
+description: 'Mākslīgā intelekta pārveidota,  "PROGRESĪVIE" - Rīga programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/riga/progresivie'
+municipality: 'Rīga'
 start_number: 8
 count_of_candidate: 62
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 62
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Sakārtotas ielas" variant="note" size="small" /> <Badge text="Draudzīga pārvaldība" variant="note" size="small" /> <Badge text="Drošība un gatavība krīzēm" variant="note" size="small" /> <Badge text="Ekonomiskā attīstība" variant="note" size="small" /> <Badge text="Zaļāka Rīga" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

@@ -1,6 +1,8 @@
 ---
 title: '"Saskaņa" sociāldemokrātiskā partija'
+description: 'Mākslīgā intelekta pārveidota,  "Saskaņa" sociāldemokrātiskā partija - Ropažu novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/ropazu-novads/saskana-socialdemokratiska-partija'
+municipality: 'Ropažu novads'
 start_number: 1
 count_of_candidate: 14
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 14
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Ģimenes labklājība" variant="note" size="small" /> <Badge text="Vide un drošība" variant="note" size="small" /> <Badge text="Izglītības atbalsts" variant="note" size="small" /> <Badge text="Infrastruktūras uzlabošana" variant="note" size="small" /> <Badge text="Sporta attīstība" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

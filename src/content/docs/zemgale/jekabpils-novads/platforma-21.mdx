@@ -1,6 +1,8 @@
 ---
 title: '"Platforma 21"'
+description: 'Mākslīgā intelekta pārveidota,  "Platforma 21" - Jēkabpils novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/jekabpils-novads/platforma-21'
+municipality: 'Jēkabpils novads'
 start_number: 1
 count_of_candidate: 22
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 22
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Pašvaldību finanšu sadale" variant="note" size="small" /> <Badge text="Senioru un cilvēku ar īpašām vajadzībām atbalsts" variant="note" size="small" /> <Badge text="Bezmaksas pusdienas skolēniem" variant="note" size="small" /> <Badge text="Skolu saglabāšana" variant="note" size="small" /> <Badge text="Uzņēmējdarbības veicināšana" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

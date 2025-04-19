@@ -1,6 +1,8 @@
 ---
 title: '"Latvijas attīstībai"'
+description: 'Mākslīgā intelekta pārveidota,  "Latvijas attīstībai" - Olaines novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/olaines-novads/latvijas-attistibai'
+municipality: 'Olaines novads'
 start_number: 5
 count_of_candidate: 18
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 18
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Drošība un kārtība" variant="note" size="small" /> <Badge text="Sociālā palīdzība" variant="note" size="small" /> <Badge text="Izglītības kvalitāte" variant="note" size="small" /> <Badge text="Infrastruktūras attīstība" variant="note" size="small" /> <Badge text="Ciemu atbalsts" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

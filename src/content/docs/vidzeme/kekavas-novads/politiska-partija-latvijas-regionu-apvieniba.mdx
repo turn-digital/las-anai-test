@@ -1,6 +1,8 @@
 ---
 title: 'Politiskā partija "Latvijas Reģionu Apvienība"'
+description: 'Mākslīgā intelekta pārveidota,  Politiskā partija "Latvijas Reģionu Apvienība" - Ķekavas novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/kekavas-novads/politiska-partija-latvijas-regionu-apvieniba'
+municipality: 'Ķekavas novads'
 start_number: 3
 count_of_candidate: 22
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 22
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Pašvaldības pakalpojumu pieejamība" variant="note" size="small" /> <Badge text="Drošības stiprināšana" variant="note" size="small" /> <Badge text="Infrastruktūras un vides sakārtošana" variant="note" size="small" /> <Badge text="Izglītības attīstība" variant="note" size="small" /> <Badge text="Uzņēmējdarbības veicināšana" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

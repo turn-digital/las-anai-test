@@ -1,6 +1,8 @@
 ---
 title: 'Latvijas Zaļā partija'
+description: 'Mākslīgā intelekta pārveidota,  Latvijas Zaļā partija - Tukuma novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/tukuma-novads/latvijas-zala-partija'
+municipality: 'Tukuma novads'
 start_number: 6
 count_of_candidate: 22
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 22
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Lauku attīstība" variant="note" size="small" /> <Badge text="Izglītība un kultūra" variant="note" size="small" /> <Badge text="Uzņēmējdarbības atbalsts" variant="note" size="small" /> <Badge text="Veselība un sociālā aizsardzība" variant="note" size="small" /> <Badge text="Drošība un vides aizsardzība" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

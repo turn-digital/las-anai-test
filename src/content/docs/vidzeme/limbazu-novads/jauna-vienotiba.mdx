@@ -1,6 +1,8 @@
 ---
 title: 'Jaunā VIENOTĪBA'
+description: 'Mākslīgā intelekta pārveidota,  Jaunā VIENOTĪBA - Limbažu novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/limbazu-novads/jauna-vienotiba'
+municipality: 'Limbažu novads'
 start_number: 7
 count_of_candidate: 15
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 15
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Vienlīdzīga attieksme" variant="note" size="small" /> <Badge text="Ekonomiskā attīstība" variant="note" size="small" /> <Badge text="Atbalsts jaunajām ģimenēm" variant="note" size="small" /> <Badge text="Infrastruktūras sakārtošana" variant="note" size="small" /> <Badge text="Veselības pieejamība" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

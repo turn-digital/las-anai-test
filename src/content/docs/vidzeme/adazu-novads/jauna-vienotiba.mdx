@@ -1,6 +1,8 @@
 ---
 title: 'Jaunā VIENOTĪBA'
+description: 'Mākslīgā intelekta pārveidota,  Jaunā VIENOTĪBA - Ādažu novads programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/adazu-novads/jauna-vienotiba'
+municipality: 'Ādažu novads'
 start_number: 8
 count_of_candidate: 18
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 18
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Pakalpojumu efektivitāte" variant="note" size="small" /> <Badge text="ES fondu piesaiste" variant="note" size="small" /> <Badge text="Izglītības modernizācija" variant="note" size="small" /> <Badge text="Sporta un atpūtas centrs" variant="note" size="small" /> <Badge text="Drošības nodrošināšana" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

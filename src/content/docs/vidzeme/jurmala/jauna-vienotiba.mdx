@@ -1,6 +1,8 @@
 ---
 title: 'Jaunā VIENOTĪBA'
+description: 'Mākslīgā intelekta pārveidota,  Jaunā VIENOTĪBA - Jūrmala programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/jurmala/jauna-vienotiba'
+municipality: 'Jūrmala'
 start_number: 2
 count_of_candidate: 16
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 16
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Drošība un kārtība" variant="note" size="small" /> <Badge text="Ekonomiskā izaugsme" variant="note" size="small" /> <Badge text="Infrastruktūras attīstība" variant="note" size="small" /> <Badge text="Kvalitatīva izglītība" variant="note" size="small" /> <Badge text="Atklāta pārvaldība" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts

@@ -1,6 +1,8 @@
 ---
 title: 'Latvijas Atdzimšanas partija'
+description: 'Mākslīgā intelekta pārveidota,  Latvijas Atdzimšanas partija - Rīga programma vienkāršā valodā'
 program_url: 'https://dati.cvk.lv/PV2025/kandidatu-saraksti/riga/latvijas-atdzimsanas-partija'
+municipality: 'Rīga'
 start_number: 5
 count_of_candidate: 1
 ---
@@ -8,12 +10,14 @@ count_of_candidate: 1
 import { Card } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 
+Vieta: {frontmatter.municipality}<br/>
+
 <Badge text="Demokrātiska pārvalde" variant="note" size="small" /> <Badge text="Rūpniecības atdzimšana" variant="note" size="small" /> <Badge text="Rīdzinieks pirmajā vietā" variant="note" size="small" /> <Badge text="Civilā aizsardzība" variant="note" size="small" /> <Badge text="Birokrātijas likvidācija" variant="note" size="small" />
 
 <br/><br/> 
 
 <Card title='Šis ir mākslīga intelekta ģenerēts apraksts' icon='starlight'>
-    Ja vēlie vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
+    Ja vēlies, vari apskatīt <a href={frontmatter.program_url} target='_blank'>šī saraksta programmu CVK mājas lapā</a>
     </Card>
 
 ## Īsais apraksts
